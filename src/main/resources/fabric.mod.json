@@ -10,7 +10,7 @@
 	"contact": {
 		"sources": "https://github.com/Core-LOVE/Pigment/tree/1.20.2"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/pigment/icon.png",
 	"environment": "*",
 	"entrypoints": {
