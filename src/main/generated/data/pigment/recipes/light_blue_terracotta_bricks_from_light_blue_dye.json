@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "terracotta_bricks",
+  "key": {
+    "X": {
+      "item": "pigment:terracotta_bricks"
+    },
+    "Y": {
+      "item": "minecraft:light_blue_dye"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "result": {
+    "count": 8,
+    "item": "pigment:light_blue_terracotta_bricks"
+  },
+  "show_notification": true
+}

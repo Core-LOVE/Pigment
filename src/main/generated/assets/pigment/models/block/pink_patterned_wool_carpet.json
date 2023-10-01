@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "pigment:block/pink_patterned_wool"
+  }
+}

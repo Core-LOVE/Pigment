@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "pigment:lime_terracotta_shingles"
+  },
+  "result": "pigment:lime_terracotta_shingles_wall"
+}

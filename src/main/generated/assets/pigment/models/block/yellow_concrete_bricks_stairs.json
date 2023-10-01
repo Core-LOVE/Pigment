@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "pigment:block/yellow_concrete_bricks",
+    "side": "pigment:block/yellow_concrete_bricks",
+    "top": "pigment:block/yellow_concrete_bricks"
+  }
+}

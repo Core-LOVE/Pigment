@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "minecraft:yellow_terracotta"
+  },
+  "result": "pigment:yellow_terracotta_bricks_slab"
+}

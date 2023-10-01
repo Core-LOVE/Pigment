@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "terracotta_shingles",
+  "key": {
+    "X": {
+      "item": "pigment:terracotta_shingles"
+    },
+    "Y": {
+      "item": "minecraft:brown_dye"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "result": {
+    "count": 8,
+    "item": "pigment:brown_terracotta_shingles"
+  },
+  "show_notification": true
+}

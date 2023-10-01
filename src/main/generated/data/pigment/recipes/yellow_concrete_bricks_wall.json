@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "concrete_bricks_wall",
+  "key": {
+    "X": {
+      "item": "pigment:yellow_concrete_bricks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "XXX",
+    "XXX"
+  ],
+  "result": {
+    "count": 6,
+    "item": "pigment:yellow_concrete_bricks_wall"
+  },
+  "show_notification": true
+}

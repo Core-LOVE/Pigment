@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "pigment:block/terracotta_shingles",
+    "side": "pigment:block/terracotta_shingles",
+    "top": "pigment:block/terracotta_shingles"
+  }
+}

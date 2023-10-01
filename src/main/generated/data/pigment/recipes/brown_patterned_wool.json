@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "patterned_wool",
+  "key": {
+    "X": {
+      "item": "minecraft:string"
+    },
+    "Y": {
+      "item": "minecraft:brown_wool"
+    }
+  },
+  "pattern": [
+    "XY ",
+    "YX ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "item": "pigment:brown_patterned_wool"
+  },
+  "show_notification": true
+}

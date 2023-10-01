@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "pigment:white_patterned_wool_carpet",
+    "pigment:black_patterned_wool_carpet",
+    "pigment:light_gray_patterned_wool_carpet",
+    "pigment:red_patterned_wool_carpet",
+    "pigment:pink_patterned_wool_carpet",
+    "pigment:cyan_patterned_wool_carpet",
+    "pigment:blue_patterned_wool_carpet",
+    "pigment:light_blue_patterned_wool_carpet",
+    "pigment:purple_patterned_wool_carpet",
+    "pigment:yellow_patterned_wool_carpet",
+    "pigment:orange_patterned_wool_carpet",
+    "pigment:gray_patterned_wool_carpet",
+    "pigment:magenta_patterned_wool_carpet",
+    "pigment:green_patterned_wool_carpet",
+    "pigment:lime_patterned_wool_carpet",
+    "pigment:brown_patterned_wool_carpet"
+  ]
+}

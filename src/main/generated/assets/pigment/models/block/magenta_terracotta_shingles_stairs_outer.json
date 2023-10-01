@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "pigment:block/magenta_terracotta_shingles",
+    "side": "pigment:block/magenta_terracotta_shingles",
+    "top": "pigment:block/magenta_terracotta_shingles"
+  }
+}

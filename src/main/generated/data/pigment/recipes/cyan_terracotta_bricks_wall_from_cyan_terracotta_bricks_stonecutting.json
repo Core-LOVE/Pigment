@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "pigment:cyan_terracotta_bricks"
+  },
+  "result": "pigment:cyan_terracotta_bricks_wall"
+}

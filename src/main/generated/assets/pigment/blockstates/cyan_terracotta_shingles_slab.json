@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "pigment:block/cyan_terracotta_shingles_slab"
+    },
+    "type=double": {
+      "model": "pigment:block/cyan_terracotta_shingles"
+    },
+    "type=top": {
+      "model": "pigment:block/cyan_terracotta_shingles_slab_top"
+    }
+  }
+}

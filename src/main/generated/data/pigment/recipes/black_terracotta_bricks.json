@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "terracotta_bricks",
+  "key": {
+    "X": {
+      "item": "minecraft:black_terracotta"
+    }
+  },
+  "pattern": [
+    "XX ",
+    "XX ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "item": "pigment:black_terracotta_bricks"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "concrete_bricks_slab",
+  "key": {
+    "X": {
+      "item": "pigment:gray_concrete_bricks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "XXX",
+    "   "
+  ],
+  "result": {
+    "count": 6,
+    "item": "pigment:gray_concrete_bricks_slab"
+  },
+  "show_notification": true
+}

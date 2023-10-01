@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "pigment:yellow_concrete_bricks"
+  },
+  "result": "pigment:yellow_concrete_bricks_wall"
+}

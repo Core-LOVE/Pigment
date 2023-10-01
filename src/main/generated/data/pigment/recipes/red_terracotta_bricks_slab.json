@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "terracotta_bricks_slab",
+  "key": {
+    "X": {
+      "item": "pigment:red_terracotta_bricks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "XXX",
+    "   "
+  ],
+  "result": {
+    "count": 6,
+    "item": "pigment:red_terracotta_bricks_slab"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "pigment:terracotta_bricks"
+  },
+  "result": "pigment:terracotta_bricks_stairs"
+}

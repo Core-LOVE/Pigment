@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "terracotta_shingles",
+  "key": {
+    "X": {
+      "item": "minecraft:red_terracotta"
+    }
+  },
+  "pattern": [
+    "   ",
+    "XX ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "item": "pigment:red_terracotta_shingles"
+  },
+  "show_notification": true
+}

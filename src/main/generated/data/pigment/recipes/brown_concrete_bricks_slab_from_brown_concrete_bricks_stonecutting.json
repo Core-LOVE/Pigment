@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "pigment:brown_concrete_bricks"
+  },
+  "result": "pigment:brown_concrete_bricks_slab"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "pigment:purple_concrete_bricks"
+  },
+  "result": "pigment:purple_concrete_bricks_stairs"
+}

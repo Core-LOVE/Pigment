@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "terracotta_bricks_wall",
+  "key": {
+    "X": {
+      "item": "pigment:light_gray_terracotta_bricks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "XXX",
+    "XXX"
+  ],
+  "result": {
+    "count": 6,
+    "item": "pigment:light_gray_terracotta_bricks_wall"
+  },
+  "show_notification": true
+}

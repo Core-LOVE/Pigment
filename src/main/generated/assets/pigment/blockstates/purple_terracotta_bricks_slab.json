@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "pigment:block/purple_terracotta_bricks_slab"
+    },
+    "type=double": {
+      "model": "pigment:block/purple_terracotta_bricks"
+    },
+    "type=top": {
+      "model": "pigment:block/purple_terracotta_bricks_slab_top"
+    }
+  }
+}
