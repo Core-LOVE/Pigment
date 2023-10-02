@@ -34,7 +34,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         super(dataGenerator);
     }
 
-    public static void patternedWoolRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
+    public static void patternedWoolRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 4)
                 .group("patterned_wool")
                 .pattern("XY ")
@@ -46,7 +46,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    public static void concreteBricksRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
+    public static void concreteBricksRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 4)
                 .pattern("XX ")
                 .pattern("XX ")
@@ -56,7 +56,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    public static void terracottaBricksRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
+    public static void terracottaBricksRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 4)
                 .group("terracotta_bricks")
                 .pattern("XX ")
@@ -67,7 +67,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    public static void dyeRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input, ItemConvertible block, String group, AdvancementCriterion<?> advancementCriterion) {
+    /*
+    public static void dyeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input, ItemConvertible block, String group, AdvancementCriterion advancementCriterion) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 8)
                 .group(group)
                 .pattern("XXX")
@@ -78,8 +79,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion("has_item", advancementCriterion)
                 .offerTo(exporter, new Identifier(ExampleMod.ID, output.asItem() + "_from_" + input.asItem()));
     }
-
-    public static void patternedWoolCarpetRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
+    */
+    public static void patternedWoolCarpetRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 2)
                 .group("patterned_wool_carpet")
                 .pattern("   ")
@@ -90,7 +91,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    public static void terracottaShinglesRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
+    public static void terracottaShinglesRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 4)
                 .group("terracotta_shingles")
                 .pattern("   ")
@@ -101,7 +102,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    public static void slabRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input, String group) {
+    public static void slabRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input, String group) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 6)
                 .group(group)
                 .pattern("   ")
@@ -112,7 +113,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    public static void stairsRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input, String group) {
+    public static void stairsRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input, String group) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 4)
                 .group(group)
                 .pattern("X  ")
@@ -123,7 +124,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    public static void wallRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input, String group) {
+    public static void wallRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input, String group) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 6)
                 .group(group)
                 .pattern("   ")
@@ -134,13 +135,13 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    private static void stonecutting(RecipeExporter output, ItemConvertible result, Ingredient ingredient, int amount, ItemConvertible type) {
+    private static void stonecutting(Consumer<RecipeJsonProvider> output, ItemConvertible result, Ingredient ingredient, int amount, ItemConvertible type) {
         SingleItemRecipeJsonBuilder.createStonecutting(ingredient, RecipeCategory.BUILDING_BLOCKS, result, amount)
                 .criterion("has_item", conditionsFromItem(type))
                 .offerTo(output, new Identifier(ExampleMod.ID, result.asItem() + "_from_" + type.asItem() + "_stonecutting"));
     }
 
-    public static void recolorWool(RecipeExporter output, ItemConvertible from, ItemConvertible to) {
+    public static void recolorWool(Consumer<RecipeJsonProvider> output, ItemConvertible from, ItemConvertible to) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, to)
                 .input(ModItemTagGenerator.PATTERNED_WOOLS)
                 .input(from)
@@ -148,16 +149,15 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(output, new Identifier(ExampleMod.ID, to.asItem() + "_from_" + from.asItem()));
     }
 
-    public static void recolorWoolCarpet(RecipeExporter output, ItemConvertible from, ItemConvertible to) {
+    public static void recolorWoolCarpet(Consumer<RecipeJsonProvider> output, ItemConvertible from, ItemConvertible to) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, to)
                 .input(ModItemTagGenerator.PATTERNED_WOOL_CARPETS)
                 .input(from)
                 .criterion("has_item", conditionsFromItem(from))
                 .offerTo(output, new Identifier(ExampleMod.ID, to.asItem() + "_from_" + from.asItem()));
     }
-
-    @Override
-    public void generate(RecipeExporter exporter) {
+    
+    public void generate(Consumer<RecipeJsonProvider> exporter) {
         List<String> colors = new ArrayList<>();
         colors.addAll(Arrays.asList("yellow", "blue", "light_blue", "light_gray", "gray", "green", "lime", "purple", "pink", "red", "orange", "cyan", "black", "white", "brown", "magenta"));
 
@@ -464,8 +464,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                                 stairsRecipe(exporter, stairsMap.get(block), block, "terracotta_bricks_stairs");
                                 wallRecipe(exporter, wallMap.get(block), block, "terracotta_bricks_wall");
 
-                                dyeRecipe(exporter, block, dyeMap.get(keyword), ModBlocks.TERRACOTTA_BRICKS, "terracotta_bricks",
-                                        conditionsFromItem(dyeMap.get(keyword)));
+                                //dyeRecipe(exporter, block, dyeMap.get(keyword), ModBlocks.TERRACOTTA_BRICKS, "terracotta_bricks",
+                                //        conditionsFromItem(dyeMap.get(keyword)));
                                 
                                 stonecutting(exporter, slabMap.get(block), Ingredient.ofItems(block), 2, block);
                                 stonecutting(exporter, stairsMap.get(block), Ingredient.ofItems(block), 1, block);
@@ -485,8 +485,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                                 stairsRecipe(exporter, stairsMap.get(block), block, "terracotta_shingles_stairs");
                                 wallRecipe(exporter, wallMap.get(block), block, "terracotta_shingles_wall");
 
-                                dyeRecipe(exporter, block, dyeMap.get(keyword), ModBlocks.TERRACOTTA_SHINGLES, "terracotta_shingles",
-                                        conditionsFromItem(dyeMap.get(keyword)));
+                                //dyeRecipe(exporter, block, dyeMap.get(keyword), ModBlocks.TERRACOTTA_SHINGLES, "terracotta_shingles",
+                                        //conditionsFromItem(dyeMap.get(keyword)));
 
                                 stonecutting(exporter, slabMap.get(block), Ingredient.ofItems(block), 2, block);
                                 stonecutting(exporter, stairsMap.get(block), Ingredient.ofItems(block), 1, block);
