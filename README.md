@@ -1,5 +1,6 @@
 # Pigment
 CurseForge Page - https://www.curseforge.com/minecraft/mc-mods/pigment
+
 Modrinth Page - https://modrinth.com/mod/pigment
 
 Pigment is a Fabric/Quilt mod that adds new colored blocks. Currently it adds:
